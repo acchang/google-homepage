@@ -1,30 +1,128 @@
 <style>
-body {
+  .central-element {
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
 }
+
+#topbar {
+  background-color: white;
+  display: flex;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-size: 14px;
+  line-height: 40px;
+  font-family: Google Sans,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+}
+
+.top {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+
+#topnav-left {
+  display: flex;
+  justify-content: left;
+  width: 50%;
+  height: 50%;
+}
+
+#topnav-right {
+  display: flex;
+  justify-content: right;
+  width: 50%;
+  height: 50%;
+}
+
+#bottombar {
+  background-color:#ddd;
+  display: flex;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 40px;
+  font-family: Google Sans,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
   }
+
+a{
+   text-decoration: none;
+}
+
+#bottombar a:hover {
+  text-decoration: underline;
+}
+
+#bottom-left {
+  display: flex;
+  justify-content: left;
+  width: 50%;
+  height: 50%;
+}
+
+#bottom-right {
+  display: flex;
+  justify-content: right;
+  width: 50%;
+  height: 50%;
+}
+
+.bot {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+#grid {
+  padding: 5px;
+}
 </style>
 
-<!DOCTYPE html>
-<html>
-  <head>
-    <!-- metadata elements -->
-  </head>
-  <body>
+<nav id="topbar">
+  <div id="topnav-left">
+    <a href="#home" class="top">About</a>
+    <a href="#news" class="top">Store</a>
+  </div>
+  <div id="topnav-right">
+      <a href="#contact" class="top">Gmail</a>
+      <a href="#search" class="top">Images</a>
+      <a href="#about" id="grid"><img src="https://jhphamwise.github.io/google-homepage/apps.png" width=25px height=25px></a>
+      <a href="#about"><img src="https://lh3.googleusercontent.com/ogw/ADGmqu986PesEfyzvAQAvwaGYKqWo6XB23bzrGm9TCwJ=s32-c-mo"></a>
+      &nbsp; &nbsp;
+  </div>
+</nav> 
 
-<!-- Start with just putting the main elements on the page 
-  (the logo image and search form), then get them placed horizontally. -->
-
-    <center>
+  <div class="central-element">
   <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
- </center>
-
+<br>
+  <div class="enter input">
   <form>
-    <center>
       <label for="search input"></label>
       <input type="text" id="search" name="search">
-    </center>
   </form>
-  
+  </div>
+  </div>
+
+  <nav id="bottombar">
+    <div id="bottom-left">
+    <a href="#advertising" class="bot">Advertising</a></li>
+    <a href="#business" class="bot">Business</a></li>
+    <a href="#HowSearchWorks" class="bot">How Search works</a></li>
+    </div>
+    <div id="bottom-right">
+    <a href="#Privacy" class="bot">Privacy</a></li>
+    <a href="#Terms" class="bot">Terms</a></li>
+    <a href="#Settings"class="bot">Settings   </a></li>
+    &nbsp; &nbsp;
+    </div>
+  </nav>
+
   </body>
 </html>
