@@ -1,6 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Google</title>
+
 <style>
+
+*{
+            margin:0;
+            padding:0;
+            font-family: arial,sans-serif;
+            color: #5F6368;
+            background-color: white;
+            font-family: Google Sans,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+        }
+
   .central-element {
-  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,95 +24,68 @@
   min-height: 100vh;
 }
 
-#topbar {
-  background-color: white;
-  display: flex;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  font-size: 14px;
-  line-height: 40px;
-  font-family: Google Sans,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
-}
-
-.top {
-  padding-left: 12px;
-  padding-right: 12px;
-}
-
-
-#topnav-left {
-  display: flex;
-  justify-content: left;
-  width: 50%;
-  height: 50%;
-}
-
-#topnav-right {
-  display: flex;
-  justify-content: right;
-  width: 50%;
-  height: 50%;
-}
-
-#bottombar {
-  background-color:#ddd;
-  display: flex;
-  overflow: hidden;
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
-  font-size: 14px;
-  line-height: 40px;
-  font-family: Google Sans,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
-  }
-
-a{
+a {
    text-decoration: none;
 }
 
-#bottombar a:hover {
+a:hover {
   text-decoration: underline;
 }
 
-#bottom-left {
-  display: flex;
-  justify-content: left;
-  width: 50%;
-  height: 50%;
+.split{
+flex:1;
 }
 
-#bottom-right {
-  display: flex;
-  justify-content: right;
-  width: 50%;
-  height: 50%;
+nav{
+font-size:13px;
 }
 
-.bot {
-  padding-left: 12px;
-  padding-right: 12px;
+nav ul{
+  display:flex;
+  list-style-type: none;
+  padding:13px 10px;
+  align-items:center;
 }
 
-#grid {
-  padding: 5px;
+div ul{
+  display:flex;
+  list-style-type: none;
+  padding:12px 10px;
 }
+
+li{
+margin:0px 10px;
+}
+
+footer{
+width:100%;
+position:fixed;
+bottom:0;
+overflow: hidden;
+}
+
+.footer-div{
+background-color: #f2f2f2;
+border-color:#cac7c7;
+border-top-width:1px;
+border-top-style:solid;
+overflow: hidden;
+}
+
 </style>
 
-<nav id="topbar">
-  <div id="topnav-left">
-    <a href="#home" class="top">About</a>
-    <a href="#news" class="top">Store</a>
-  </div>
-  <div id="topnav-right">
-      <a href="#contact" class="top">Gmail</a>
-      <a href="#search" class="top">Images</a>
-      <a href="#about" id="grid"><img src="https://jhphamwise.github.io/google-homepage/apps.png" width=25px height=25px></a>
-      <a href="#about"><img src="https://lh3.googleusercontent.com/ogw/ADGmqu986PesEfyzvAQAvwaGYKqWo6XB23bzrGm9TCwJ=s32-c-mo"></a>
-      &nbsp; &nbsp;
-  </div>
-</nav> 
+<body>
+
+<nav>
+  <ul>
+      <li> <a href="">About </a></li>
+      <li class="split"> <a href="">Store </a></li>
+      <li><a href="">Gmail </a></li>
+      <li><a href=""> Images </a></li>
+      <li><a href="#about" id="grid"><img src="https://jhphamwise.github.io/google-homepage/apps.png" width=25px height=25px></a></head><li>
+      <li><a href=""><img id="user" src="https://lh3.googleusercontent.com/-ja-IT2lt9GQ/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuclHnxYAjd618e1KQ1HUoo9oNPONGQ.CMID/s32-c/photo.jpg" alt="User Logo"></a></li>
+  </ul>
+</nav>
 
   <div class="central-element">
   <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
@@ -110,19 +98,18 @@ a{
   </div>
   </div>
 
-  <nav id="bottombar">
-    <div id="bottom-left">
-    <a href="#advertising" class="bot">Advertising</a></li>
-    <a href="#business" class="bot">Business</a></li>
-    <a href="#HowSearchWorks" class="bot">How Search works</a></li>
-    </div>
-    <div id="bottom-right">
-    <a href="#Privacy" class="bot">Privacy</a></li>
-    <a href="#Terms" class="bot">Terms</a></li>
-    <a href="#Settings"class="bot">Settings   </a></li>
-    &nbsp; &nbsp;
-    </div>
-  </nav>
+<footer>
+<div class="footer-div">
+  <ul>
+    <li> <a href="">Advertising </a></li>
+    <li> <a href="">Business </a></li>
+    <li class="split"> <a href="">How Search works </a></li>
+    <li> <a href="">Privacy </a></li>
+    <li> <a href="">Terms </a></li>
+    <li> <a href="">Settings </a></li>
+    </ul>
+</div>
+</footer>
 
   </body>
 </html>
