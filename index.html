@@ -7,21 +7,11 @@
 <style>
 
 *{
-            margin:0;
-            padding:0;
-            font-family: arial,sans-serif;
-            color: #5F6368;
-            background-color: white;
-            font-family: Google Sans,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
-        }
-
-  .central-element {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  min-height: 100vh;
+margin:0;
+padding:0;
+color: #5F6368;
+background-color: white;
+font-family: Google Sans,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
 }
 
 a {
@@ -61,7 +51,8 @@ footer{
 width:100%;
 position:fixed;
 bottom:0;
-overflow: hidden;
+overflow: visible;
+height:40px;
 }
 
 .footer-div{
@@ -69,13 +60,53 @@ background-color: #f2f2f2;
 border-color:#cac7c7;
 border-top-width:1px;
 border-top-style:solid;
-overflow: hidden;
+overflow: visible;
+height:40px;
+font-size:13px;
+}
+
+main{
+  width:50%;
+  margin:122px auto;
+  text-align:center;
+}
+
+#search-bar{
+width:500px;
+height:42px;
+border-radius:25px;
+padding-left:20px;
+margin-top:20px;
+margin-bottom:20px;
+border: 1px solid #c7c3c3;
+}
+
+#announcement{
+color:blue;
+font-size:13px;
+}
+
+.knob:hover{
+            color:black;
+            border-color: #cac7c7;
+        }
+
+.knob{
+padding:5px 12px;
+background-color: #f2f2f2;
+border: 1px solid #f2f2f2;
+border-radius: 4px;
+height:36px;
+margin:8px 8px 22px 0;
+cursor:pointer;
+        }
+
+#user {
+  border-radius:50%;
 }
 
 </style>
-
 <body>
-
 <nav>
   <ul>
       <li> <a href="">About </a></li>
@@ -87,16 +118,24 @@ overflow: hidden;
   </ul>
 </nav>
 
-  <div class="central-element">
-  <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-<br>
-  <div class="enter input">
-  <form>
-      <label for="search input"></label>
-      <input type="text" id="search" name="search">
+
+
+<main>
+  <div id="logo">
+    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+  </div>
+  <br>
+  <form action="" method="get">
+    <input type="text" id="search-bar" name="search">
   </form>
-  </div>
-  </div>
+  <div>
+    <form action="" method="get">
+    <button class="knob">Google Search</button>
+    <button class="knob">I'm Feeling Lucky</button>
+    </form>
+ </div>
+      <a href="" id="announcement">Here is where the announcement goes</a>
+  </main>
 
 <footer>
 <div class="footer-div">
